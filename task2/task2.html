@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <main>
+            <button class="trigger">Нажми на меня</button>
+            <div class="modal">
+                <form class="modal-content">
+                     <span class="close-button">×</span>
+                    <h1>Транспортные средства и водители</h1>
+                    <div class="transport-1">
+                        <h2>Гос-номер</h2>
+                        <input type="text" id="txt_1" placeholder="Укажите гос-номер" required onkeyup='saveValue(this);' pattern="[A-Z]{1}+[0-9]{2}+[1-9]{1}+[A-Z]{1}"></input>
+                    </div>
+                    <div class="transport-2">
+                        <h2>Транспортное средство</h2>
+                        <input type="text" id="txt_1" placeholder="Транспортное средство" required onkeyup='saveValue(this);'></input>
+                    </div>
+                    <div class="transport-3">
+                        <h2>Орентировачная дата прибытия к покупателю</h2>
+                        <input class="data" id="txt_1" type="date" placeholder="Дата*" required onkeyup='saveValue(this);'></input>
+                    </div>
+                    <h1 class="Dannie">Данные о водителе</h1>
+                    <div class="Dannie-1">
+                        <h2>ФИО</h2>
+                        <input type="text" placeholder="Укажите ФИО водителя" required onkeyup='saveValue(this);'></input>
+                    </div>
+                    <div class="Dannie-1">
+                        <h2>Паспортные данные</h2>
+                        <input class="pasport" type="text" placeholder="Серия" required onkeyup='saveValue(this);' pattern="[0-9]{4}"></input>
+                        <input class="pasport" type="text" placeholder="Номер" required onkeyup='saveValue(this);' pattern="[0-9]{6}"></input>
+                    </div>
+                    <div class="Dannie-1">
+                        <h2>Кем выдан</h2>
+                        <input type="text" placeholder="Кем выдан" required onkeyup='saveValue(this);'></input>
+                    </div>
+                    <div class="Dannie-1">
+                        <h2>Когда выдан</h2>
+                        <input type="date" placeholder="Когда выдан" required onkeyup='saveValue(this);'></input>
+                    </div>
+                    <button class="button-send" type="submit">Отправить</button>
+                    <button class="button-cancel">Отменить</button>
+                </form>
+            </div>
+    </main>
+    <script src="button.js"></script>
+</body>
+</html>
